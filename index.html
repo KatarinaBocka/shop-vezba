@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <!--Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <!-- Font-awesome-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+         <!-- Carousel Slider -->
+         <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+         <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+        <!-- Slider -->
+        <link rel="stylesheet" href="nivo-slider.css" type="text/css" />  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>  
+        <!-- <script src="jquery.nivo.slider.pack.js" type="text/javascript"></script> -->
+         <!-- Carousel Slider -->
+         <script src="js/library/jquery.min.js"></script> 
+         <script src="js/library/owl.carousel.min.js"></script>
+       
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div id="top">
+                    <div class="container-fluid">
+                        <div class="container-inner">
+                            <p class="delivery">Free delivery when you spend over $120. Offer available until 20/02/2018</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar navbar-fixed-top" role="navigation" >
+                        <div class="logo-container">
+                            <a href="#">
+                                <img src="images/logo.png" class="logo" alt="logo">
+                            </a>
+                        </div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Shop</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#women">Women</a>
+                                <a href="#man">Man</a>
+                                <a href="#children">Children</a>
+                            </div>
+                        </div>
+                        <div class="box box-left">
+                           <ul>
+                               <li class="active"><a href="#">Home</a></li>
+                               <li><a href="#">Shop</a></li>
+                               <div class="popup" style="width:1020px; display: none">
+                                   <div class="inner-popup">
+                                       <div class="block" style="width: 1020px;">
+                                           <div class="column col1 firstCol">
+                                               <div class="itemMenu level-0">
+                                                   <a class="itemMenuName" href="#"><span>Accessories</span></a>
+                                               </div>
+                                               <div class="itemSubMenu level-0">
+                                                   <div class="itemMenu level-0">
+                                                       <a href="#" class="itemMenuName level-0"><span>Hoodies</span></a>
+                                                       <a href="#" class="itemMenuName level-0"><span>Jackets & Coats</span></a>
+                                                       <a href="#" class="itemMenuName level-0"><span>Sweaters</span></a>
+                                                       <a href="#" class="itemMenuName level-0"><span>Tops & Tees</span></a>
+                                                    </div>  
+                                               </div>
+                                           </div>
+                                           <div class="column col2">
+                                                <div class="itemMenu level-0">
+                                                    <a class="itemMenuName" href="#"><span>Jewellery</span></a>
+                                                </div>
+                                                <div class="itemSubMenu level-0">
+                                                    <div class="itemMenu level-0">
+                                                        <a href="#" class="itemMenuName level-0"><span>Casual</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Chinos</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Joggers</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Rings</span></a>
+                                                     </div>  
+                                                </div>
+                                            </div>
+                                            <div class="column col3">
+                                                <div class="itemMenu level-0">
+                                                    <a class="itemMenuName" href="#"><span>Kids</span></a>
+                                                </div>
+                                                <div class="itemSubMenu level-0">
+                                                    <div class="itemMenu level-0">
+                                                        <a href="#" class="itemMenuName level-0"><span>Bottoms</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Crochet</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Dresses</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Jeans</span></a>
+                                                     </div>  
+                                                </div>
+                                            </div>
+                                            <div class="column col4">
+                                                <div class="itemMenu level-0">
+                                                    <a class="itemMenuName" href="#"><span>Men</span></a>
+                                                </div>
+                                                <div class="itemSubMenu level-0">
+                                                    <div class="itemMenu level-0">
+                                                        <a href="#" class="itemMenuName level-0"><span>Blazers</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Boots</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Hoodies</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Pants</span></a>
+                                                     </div>  
+                                                </div>
+                                            </div>
+                                            <div class="column col5 lastCol">
+                                                <div class="itemMenu level-0">
+                                                    <a class="itemMenuName" href="#"><span>Women</span></a>
+                                                </div>
+                                                <div class="itemSubMenu level-0">
+                                                    <div class="itemMenu level-0">
+                                                        <a href="#" class="itemMenuName level-0"><span>Bags</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Bottoms</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Crochet</span></a>
+                                                        <a href="#" class="itemMenuName level-0"><span>Flat Sandals</span></a>
+                                                     </div>  
+                                                </div>
+                                            </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <li><a href="#">Privacy Policy</a></li>
+                               <li><a href="#">About Us</a></li>
+                               <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="box box-right">
+                            <div class="btn-group">
+                                <div class="dropdown-toggle search-button" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <div class="dropdown-menu search-content">
+                                    <input type="text" name="search" placeholder="Search entire store here..." class="form-control input-lg">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-lg">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div id="chart" class="btn-group btn-block">
+                                    <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn dropdown-toggle" aria-expanded="true">
+                                        <i class="fa fa-shopping-bag"></i>
+                                        <span id="cart-total">0</span>
+                                        <div class="myCart">
+                                            <span>my cart</span>
+                                            <span class="total-price">0.00</span>
+                                        </div>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li>
+                                            <p class="text-center" cart-empty>Your shopping cart is empty!</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-setting">
+                                    <div class="btn-group">
+                                        <div class="dropdown-toggle setting-button" data-toggle="dropdown" aria-expanded="true">
+                                            <i class="fa fa-th"></i>
+                                        </div>
+                                        <div class="dropdown-menu setting-content">
+                                            <div class="account">
+                                                <button class="btn btn-link btn-link-current">My Account
+                                                    <i class="fa fa-angle-down"></i>
+                                                </button>
+                                                <div class="content" id="top-link">
+                                                    <ul class="ul-account list-unstyled">
+                                                        <li><a href="#">Register</a></li>
+                                                        <li><a href="#">Login</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="currency">
+                                                <button class="btn btn-link btn-link-current">Currency
+                                                    <i class="fa fa-angle-down"></i>
+                                                </button>
+                                                <div class="content" id="form-currency">
+                                                    <ul class="ul-account list-unstyled">
+                                                        <li><button class="item-selected currency-select btn btn-link btn-block">€ Euro</button></li>
+                                                        <li><button class="currency-select btn btn-link btn-block">£ Pound Sterling</button></li>
+                                                        <li><button class="currency-select btn btn-link btn-block">$ US Dollar</button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="language">
+                                                    <button class="btn btn-link btn-link-current">Language: DE-DE
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </button>
+                                                    <div class="content" id="top-link">
+                                                        <ul class="ul-account list-unstyled">
+                                                            <li><a href="#">English</a></li>
+                                                            <li><a href="#">Germany</a></li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <main>
+            <div class="main-row full-width">
+                <div class="container">
+                    <div class="row">
+                        <div class="main-col col-sm-12 col-lg-12">
+                            <div class="banner">
+                                <div class="flexslider theme-default">
+                                    <div class="oc-loading"></div>
+                                    <div id="slider" class="nivoSlider"> 
+                                        <img src="images/slider1.jpg" data-thumb="images/slider1.jpg" alt="slider1" title="#saleOff" /> 
+                                        <img src="images/slider2.jpg" data-thumb="images/slider2.jpg" alt="slider2" title="#lifestyle" />
+                                        <img src="images/slider3.jpg" data-thumb="images/slider3.jpg" alt="slider3" title="#handBag" />  
+                                    </div>
+                                    <div id="saleOff" class="html-nivo-caption">
+                                        <div class="container">
+                                            <div class="container-inner">
+                                                <div class="text-content">
+                                                    <h1 class="title" id="title1">Sale off</h1>
+                                                    <p id="paragraph-1">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie 
+                                                    consequat, vel illum dolore eu feugiat.</p>
+                                                    <span class="shoppingNow"><a href="#">Shopping now</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="lifestyle" class="html-nivo-caption">
+                                        <div class="container">
+                                            <div class="container-inner">
+                                                <div class="text-content">
+                                                    <h1 class="title" id="title2">lifestyle</h1>
+                                                    <p id="paragraph-2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie 
+                                                    consequat, vel illum dolore eu feugiat.</p>
+                                                    <span class="shoppingNow"><a href="#">Shopping now</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="handBag" class="html-nivo-caption">
+                                        <div class="container">
+                                            <div class="container-inner">
+                                                <div class="text-content">
+                                                    <h1 class="title" id="title3">Hand Bag</h1>
+                                                    <p id="paragraph-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie 
+                                                    consequat, vel illum dolore eu feugiat.</p>
+                                                    <span class="shoppingNow"><a href="#">Shopping now</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- End flexslider -->
+                            </div> <!-- End banner-->
+                        </div>
+                    </div>
+                </div> <!-- End container -->
+            </div> <!-- End main-row full-width -->
+            <div class="main-row">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                           <div class="image">
+                               <a href="#">
+                                    <img src="images/bigSale.jpg" alt="bigSale">
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-8">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="images/upTo.jpg" alt="upTo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End container-fluid -->
+                <div class="container">
+                    <div class="row">
+                    <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="gallery-title">OUR PRODUCTS</h1>
+                    </div>
+            
+                    <div align="center">
+                        <button class="btn btn-default filter-button" data-filter="all">All</button>
+                        <button class="btn btn-default filter-button" data-filter="women">Women</button>
+                        <button class="btn btn-default filter-button" data-filter="man">Man</button>
+                        <button class="btn btn-default filter-button" data-filter="children">Children</button>
+                    </div>
+                    <br/>
+            
+            
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter women">
+                            <img src="images/1.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter women">
+                            <img src="images/2.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter women">
+                            <img src="images/3.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter children">
+                            <img src="images/13.jpg" class="img-responsive">
+                            <h4 ><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter man">
+                            <img src="images/5.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter man">
+                            <img src="images/6.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter man">
+                            <img src="images/7.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter children">
+                            <img src="images/8.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter children">
+                            <img src="images/9.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter children">
+                            <img src="images/10.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter children">
+                            <img src="images/11.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+            
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter children">
+                            <img src="images/12.jpg" class="img-responsive">
+                            <h4><a href="#" class="product-name">Wopo Designs Woolrich</a></h4>
+                            <div class="product-price">
+                                <span class="regular-price">$234.00</span>
+                                <span class="sale-price">$222.30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-middle">
+                <div class="container line">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                            <div class="about-us"><h3 class="footer-header">About Us</h3></div>
+                            <div class="footer-info">
+                                <p class="desc-footer">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum...</p>
+                                <a href="#" class="readmore">Read more...</a>
+                            </div>
+                            <div class="social-follow">
+                                <h4>FOLLOW US ON SOCIAL:</h4>
+                                <ul class="social-network social-circle">
+                                    <li><a href="http://www.izgled.rs/" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                                    <li><a href="https://www.facebook.com/izgledRK/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://plus.google.com/u/0/+IzgledRsrk" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-8 col-md-8 col-lg-8">
+                            <div class="row">
+                                <div class="footer_block .offset-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wrapper">
+                                    <h3 class="footer-header">Products</h3>
+                                    <ul class="footer_list toggle-footer" id="footer_sub_menu_64770">
+                                        <li><a class="cms-page-link" href="#" title="Learn more about us">About Us</a></li>
+                                        <li><a class="cms-page-link" href="#" title="Learn more about us">Secure payment</a></li>
+                                        <li><a class="cms-page-link" href="#" title="Learn more about us">Prices drop</a></li>
+                                        <li><a class="cms-page-link" href="#" title="Learn more about us">New products</a></li>
+                                        <li><a class="cms-page-link" href="#" title="Learn more about us">Best sales</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer_block col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wrapper">
+                                        <h3 class="footer-header">Our company</h3>
+                                        <ul class="footer_list toggle-footer" id="footer_sub_menu_64770">
+                                            <li><a class="cms-page-link" href="#" title="Learn more about us">Delivery</a></li>
+                                            <li><a class="cms-page-link" href="#" title="Learn more about us">Legal Notice</a></li>
+                                            <li><a class="cms-page-link" href="#" title="Learn more about us">Contact Us</a></li>
+                                            <li><a class="cms-page-link" href="#" title="Learn more about us">Sitemap</a></li>
+                                            <li><a class="cms-page-link" href="#" title="Learn more about us">Stores</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer_block col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wrapper">
+                                        <h3 class="footer-header">Your account</h3>
+                                        <ul class="footer_list toggle-footer" id="footer_sub_menu_64770">
+                                            <li><a class="cms-page-link" href="#" title="Learn more about us">Addresses</a></li>
+                                            <li><a class="cms-page-link" href="#" title="Learn more about us">Credit slips</a></li>
+                                            <li><a class="cms-page-link" href="#" title="Learn more about us">Orders</a></li>
+                                            <li><a class="cms-page-link" href="#" title="Learn more about us">Personal info</a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
+                        <address>Copyright © <a href="https://www.facebook.com/katarina.bocka"  target="_blank">Katarina</a> 2018</address>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+                        <img src="images/payment.png" alt="payment" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+           
+           $(window).load(function() {
+            $('#slider').nivoSlider({
+                // effect: "random",
+                // slices: 15,
+                // boxCols: 8,
+                // boxRows: 4,
+                // manualAdvance: false,
+                // animSpeed: 500,
+                // pauseTime: 3000,
+                // startSlide: 0,
+                // controlNav: true,
+                // directionNav: true,
+                // controlNavThumbs: false,
+                // pauseOnHover: true,
+                // randomStrat: true,
+                // prevText: '<i class="ion-chevron-left"></i>',
+                // nextText: '<i class="ion-chevron-right"></i>',
+                // afterLoad: function(){
+                //     $('.oc-loading').css("display","block");
+                //     $('.timeloading').css('animation-duration'," 5000ms ");
+                // },						
+            });
+        });
+       
+    
+        </script>
+        <script>
+             $(document).ready(function() {
+  
+                // $(".owl-carousel").owlCarousel();
+
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 80) {
+                        $('.navbar').addClass('navbar-fixed');
+                    }
+                    if ($(window).scrollTop() < 81) {
+                        $('.navbar').removeClass('navbar-fixed');
+                    }
+                });
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 80) {
+                        $('#top').addClass('top-0');
+                    }
+                    if ($(window).scrollTop() < 81) {
+                        $('#top').removeClass('top-0');
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel();
+              });
+        </script>
+         <!-- Carousel Slider -->
+         <script src="js/library/jquery.min.js"></script> 
+         <script src="js/library/owl.carousel.js"></script>
+         
+        <!-- Nivo Slider -->
+        <link rel="stylesheet" href="js/library/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="js/library/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/library/nivo-slider/jquery.nivo.slider.js"></script>
+        <script type="text/javascript" src="js/library/products.js"></script>
+        <script type="text/javascript" src="js/library/dropdown.js"></script>
+       
+    </body>
+</html>
